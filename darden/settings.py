@@ -29,7 +29,8 @@ SECRET_KEY = 'django-insecure-movvqzervv_ec-px-qv12&@-%9ef06j**$w%u)y_y-pq3=8l$v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',
+                 'https://dao-research.herokuapp.com/']
 
 SECURE_SSL_REDIRECT = True
 
@@ -124,7 +125,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
     BASE_DIR / 'daos/static/daos/css',
 ]
 
