@@ -30,9 +30,15 @@ SECRET_KEY = 'django-insecure-movvqzervv_ec-px-qv12&@-%9ef06j**$w%u)y_y-pq3=8l$v
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 'https://dao-research.herokuapp.com/']
+                 'http://dao-research.herokuapp.com/']
 
-SECURE_SSL_REDIRECT = True
+
+if os.environ.get('local_dev') or 'test' in sys.argv or 'Run Tests' in sys.argv:
+    SECURE_SSL_REDIRECT = False
+else:
+    SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = False
+# DEFAULT_HTTP_PROTOCOL = 'http'
 
 # Application definition
 
@@ -113,9 +119,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'EST'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 
@@ -124,9 +132,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = str(Path().resolve()) + 'static'
+STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 
 # STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
