@@ -33,12 +33,12 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1',
                  'dao-research.herokuapp.com']
 
 
-if os.environ.get('local_dev') or 'test' in sys.argv or 'Run Tests' in sys.argv:
-    SECURE_SSL_REDIRECT = False
-else:
-    SECURE_SSL_REDIRECT = True
-# SECURE_SSL_REDIRECT = False
-# DEFAULT_HTTP_PROTOCOL = 'http'
+# if os.environ.get('local_dev') or 'test' in sys.argv or 'Run Tests' in sys.argv:
+#     SECURE_SSL_REDIRECT = False
+# else:
+#     SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
+DEFAULT_HTTP_PROTOCOL = 'http'
 
 # Application definition
 
@@ -61,6 +61,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'darden.urls'
@@ -134,6 +136,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = str(Path().resolve()) + 'static'
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
