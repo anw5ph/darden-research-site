@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-movvqzervv_ec-px-qv12&@-%9ef06j**$w%u)y_y-pq3=8l$v
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 'http://dao-research.herokuapp.com/']
+                 'dao-research.herokuapp.com/']
 
 
 if os.environ.get('local_dev') or 'test' in sys.argv or 'Run Tests' in sys.argv:
