@@ -38,10 +38,27 @@
         <br>
         <div class="container">
             <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                        On this page you will find a "10-pane" approach for the in-depth analyis conducted on each of the Decentralized Autonomous Organizations (DAOs). 
+                        Each DAO has its own respective pane which consists of a network graph and various calculations below the network graph. The network graph is created by 
+                        querying transaction data for a DAOs respective coin over a certain interval of time. The nodes in each chart correspond to the wallet addresses (both to 
+                        and from) and the edges correspond to the transaction itself. Each edge contains the data-time stamp of the transaction, as well as, the amount of the respective 
+                        token involved in the transaction. You may notice that some nodes are colored differently than the others in the chart, this is because I highlighted the Decentralized 
+                        Exchanges (DEXs) and the DAO-specific contracts in order to develop a better understanding of how much of the typical transactions are peer-to-peer and fully 
+                        decentralized. Furthermore, you may notice that some transactions are for zero coins, this is not an error as there are possible ways to engage in a transaction with 
+                        zero coins. This type of transaction typically occurs in interactions between contracts or peers and contracts. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" align="center">AAVE DAO</h5>
+                            <a href="https://dune.com/lcai/aave-dao"><h5 class="card-title" align="center">AAVE DAO</h5></a>
                             <hr>
                             <div id="aave_network"></div>
                             <hr>
@@ -95,15 +112,61 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" align="center">ApeCoin DAO</h5>
+                            <a href="https://dune.com/awilliams/apecoin-dao"><h5 class="card-title" align="center">ApeCoin DAO</h5></a>
                             <hr>
+                            <div id="ape_network"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Nodes: 
+                                </div>
+                                <div class="col-4" id="ape_node_num">
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Edges: 
+                                </div>
+                                <div class="col-4" id="ape_edge_num">
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Self Loops: 
+                                </div>
+                                <div class="col-4" id="ape_loop_num">
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Connected Components: 
+                                </div>
+                                <div class="col-4" id="ape_scc_num">
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Density: 
+                                </div>
+                                <div class="col-4" id="ape_density_num">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" align="center">ChiliZ DAO</h5>
+                            <a href="https://dune.com/lcai/chiliz-dao"><h5 class="card-title" align="center">ChiliZ DAO</h5></a>
                             <hr>
                             <div id="chz_network"></div>
                             <hr>
@@ -160,7 +223,7 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" align="center">Curve Finance</h5>
+                            <a href="https://dune.com/awilliams/curve-finance-dashboard"><h5 class="card-title" align="center">Curve Finance</h5></a>
                             <hr>
                             <div id="crv_network"></div>
                             <hr>
@@ -169,7 +232,7 @@
                                     Number of Nodes: 
                                 </div>
                                 <div class="col-4" id="crv_node_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -178,7 +241,7 @@
                                     Number of Edges: 
                                 </div>
                                 <div class="col-4" id="crv_edge_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -187,7 +250,7 @@
                                     Number of Self Loops: 
                                 </div>
                                 <div class="col-4" id="crv_loop_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -196,7 +259,7 @@
                                     Number of Connected Components: 
                                 </div>
                                 <div class="col-4" id="crv_scc_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -205,16 +268,17 @@
                                     Density: 
                                 </div>
                                 <div class="col-4" id="crv_density_num">
-
+    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" align="center">Frax Finance (Stable)</h5>
+                            <a href="https://dune.com/awilliams/fei-dashboard"><h5 class="card-title" align="center">Frax Finance (Stable)</h5></a>
                             <hr>
                             <div id="frax_network"></div>
                             <hr>
@@ -223,7 +287,7 @@
                                     Number of Nodes: 
                                 </div>
                                 <div class="col-4" id="frax_node_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -232,7 +296,7 @@
                                     Number of Edges: 
                                 </div>
                                 <div class="col-4" id="frax_edge_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -241,7 +305,7 @@
                                     Number of Self Loops: 
                                 </div>
                                 <div class="col-4" id="frax_loop_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -250,7 +314,7 @@
                                     Number of Connected Components: 
                                 </div>
                                 <div class="col-4" id="frax_scc_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -259,16 +323,17 @@
                                     Density: 
                                 </div>
                                 <div class="col-4" id="frax_density_num">
-
+    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" align="center">Frax Finance (Algorithmic)</h5>
+                            <a href="https://dune.com/awilliams/fei-dashboard"><h5 class="card-title" align="center">Frax Finance (Algorithmic)</h5></a>
                             <hr>
                             <div id="fxs_network"></div>
                             <hr>
@@ -277,7 +342,7 @@
                                     Number of Nodes: 
                                 </div>
                                 <div class="col-4" id="fxs_node_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -286,7 +351,7 @@
                                     Number of Edges: 
                                 </div>
                                 <div class="col-4" id="fxs_edge_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -295,7 +360,7 @@
                                     Number of Self Loops: 
                                 </div>
                                 <div class="col-4" id="fxs_loop_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -304,7 +369,7 @@
                                     Number of Connected Components: 
                                 </div>
                                 <div class="col-4" id="fxs_scc_num">
-
+    
                                 </div>
                             </div>
                             <br>
@@ -313,7 +378,286 @@
                                     Density: 
                                 </div>
                                 <div class="col-4" id="fxs_density_num">
-
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://dune.com/lcai/friends-with-benefits-dao"><h5 class="card-title" align="center">Friends With Benefits</h5></a>
+                            <hr>
+                            <div id="fwb_network"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Nodes: 
+                                </div>
+                                <div class="col-4" id="fwb_node_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Edges: 
+                                </div>
+                                <div class="col-4" id="fwb_edge_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Self Loops: 
+                                </div>
+                                <div class="col-4" id="fwb_loop_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Connected Components: 
+                                </div>
+                                <div class="col-4" id="fwb_scc_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Density: 
+                                </div>
+                                <div class="col-4" id="fwb_density_num">
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://dune.com/lcai/league-dao"><h5 class="card-title" align="center">League DAO</h5></a>
+                            <hr>
+                            <div id="leag_network"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Nodes: 
+                                </div>
+                                <div class="col-4" id="leag_node_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Edges: 
+                                </div>
+                                <div class="col-4" id="leag_edge_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Self Loops: 
+                                </div>
+                                <div class="col-4" id="leag_loop_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Connected Components: 
+                                </div>
+                                <div class="col-4" id="leag_scc_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Density: 
+                                </div>
+                                <div class="col-4" id="leag_density_num">
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://dune.com/awilliams/mana-dashboard"><h5 class="card-title" align="center">Decentraland DAO</h5></a>
+                            <hr>
+                            <div id="mana_network"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Nodes: 
+                                </div>
+                                <div class="col-4" id="mana_node_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Edges: 
+                                </div>
+                                <div class="col-4" id="mana_edge_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Self Loops: 
+                                </div>
+                                <div class="col-4" id="mana_loop_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Connected Components: 
+                                </div>
+                                <div class="col-4" id="mana_scc_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Density: 
+                                </div>
+                                <div class="col-4" id="mana_density_num">
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://dune.com/lcai/merit-circle-dao"><h5 class="card-title" align="center">Merit Circle</h5></a>
+                            <hr>
+                            <div id="mc_network"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Nodes: 
+                                </div>
+                                <div class="col-4" id="mc_node_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Edges: 
+                                </div>
+                                <div class="col-4" id="mc_edge_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Self Loops: 
+                                </div>
+                                <div class="col-4" id="mc_loop_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Connected Components: 
+                                </div>
+                                <div class="col-4" id="mc_scc_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Density: 
+                                </div>
+                                <div class="col-4" id="mc_density_num">
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://dune.com/lcai/nouns-dao"><h5 class="card-title" align="center">Nouns DAO</h5></a>
+                            <hr>
+                            <div id="noun_network"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Nodes: 
+                                </div>
+                                <div class="col-4" id="noun_node_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Edges: 
+                                </div>
+                                <div class="col-4" id="noun_edge_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Self Loops: 
+                                </div>
+                                <div class="col-4" id="noun_loop_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Number of Connected Components: 
+                                </div>
+                                <div class="col-4" id="noun_scc_num">
+    
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-8" align="center">
+                                    Density: 
+                                </div>
+                                <div class="col-4" id="noun_density_num">
+    
                                 </div>
                             </div>
                         </div>
@@ -351,17 +695,28 @@
 
         <script language="javascript">
             var aave = "{% static '/darden/js/json/aave.json' %}";
+            // var aave = "{% static '/darden/js/json/ape.json' %}";
             var chz = "{% static '/darden/js/json/chz.json' %}";
             var crv = "{% static '/darden/js/json/crv.json' %}";
             var frax = "{% static '/darden/js/json/frax.json' %}";
             var fxs = "{% static '/darden/js/json/fxs.json' %}";
+            var fwb = "{% static '/darden/js/json/fwb.json' %}";
+            var leag = "{% static '/darden/js/json/leag.json' %}";
+            // var mana = "{% static '/darden/js/json/mana.json' %}";
+            var mc = "{% static '/darden/js/json/mc.json' %}";
+            var nouns = "{% static '/darden/js/json/nouns.json' %}";
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script src="{% static '/darden/js/aave_pane.js' %}"></script>
+        <!-- <script src="{% static '/darden/js/ape_pane.js' %}"></script> -->
         <script src="{% static '/darden/js/chz_pane.js' %}"></script>
         <script src="{% static '/darden/js/crv_pane.js' %}"></script>
         <script src="{% static '/darden/js/frax_pane.js' %}"></script>
         <script src="{% static '/darden/js/fxs_pane.js' %}"></script>
+        <script src="{% static '/darden/js/fwb_pane.js' %}"></script>
+        <script src="{% static '/darden/js/leag_pane.js' %}"></script>
+        <!-- <script src="{% static '/darden/js/mana_pane.js' %}"></script> -->
+        <script src="{% static '/darden/js/mc_pane.js' %}"></script>
         <script src="{% static '/darden/js/nouns_pane.js' %}"></script>
         
     </body>
