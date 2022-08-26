@@ -33,12 +33,12 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1',
                  'dao-research.herokuapp.com']
 
 
-# if os.environ.get('local_dev') or 'test' in sys.argv or 'Run Tests' in sys.argv:
-#     SECURE_SSL_REDIRECT = False
-# else:
-#     SECURE_SSL_REDIRECT = True
-SECURE_SSL_REDIRECT = False
-DEFAULT_HTTP_PROTOCOL = 'http'
+if os.environ.get('local_dev') or 'test' in sys.argv or 'Run Tests' in sys.argv:
+    SECURE_SSL_REDIRECT = False
+else:
+    SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = False
+# DEFAULT_HTTP_PROTOCOL = 'http'
 
 # Application definition
 
