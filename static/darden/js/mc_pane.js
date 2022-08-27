@@ -16,11 +16,11 @@ function setData() {
             const edge_num = document.getElementById("mc_edge_num");
             edge_num.innerText = data.num_edge;
 
-            const self_loops_num = document.getElementById("mc_loop_num");
-            self_loops_num.innerText = data.num_self_loops;
-
             const scc_num = document.getElementById("mc_scc_num");
             scc_num.innerText = data.num_conn_comp;
+
+            const lcc_num = document.getElementById("mc_lcc_num");
+            lcc_num.innerText = data.largest_comp;
 
             const density = document.getElementById("mc_density_num");
             density.innerText = Math.round(data.density * 100000) / 100000;

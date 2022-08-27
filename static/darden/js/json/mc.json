@@ -1,1 +1,1 @@
-"{\"num_node\": 30, \"num_edge\": 32, \"num_self_loops\": 0, \"num_conn_comp\": 29, \"density\": 0.0367816091954023}"
+"{\"num_node\": 30, \"num_edge\": 32, \"num_conn_comp\": 29, \"density\": 0.0367816091954023, \"largest_comp\": 2}"
