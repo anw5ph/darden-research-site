@@ -24,6 +24,12 @@ function setData() {
 
             const density = document.getElementById("noun_density_num");
             density.innerText = Math.round(data.density * 100000) / 100000;
+
+            const triangles = document.getElementById("noun_triangle_num");
+            triangles.innerText = data.triangles;
+
+            const trans = document.getElementById("noun_trans");
+            trans.innerText = data.transitivity;
         });
     })
 

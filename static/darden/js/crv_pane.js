@@ -25,6 +25,12 @@ function setData() {
 
             const density = document.getElementById("crv_density_num");
             density.innerText = Math.round(data.density * 100000) / 100000;
+
+            const triangles = document.getElementById("crv_triangle_num");
+            triangles.innerText = data.triangles;
+
+            const trans = document.getElementById("crv_trans");
+            trans.innerText = data.transitivity;
         });
     })
 

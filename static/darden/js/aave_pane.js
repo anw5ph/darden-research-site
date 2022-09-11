@@ -24,6 +24,12 @@ function setData() {
 
             const density = document.getElementById("aave_density_num");
             density.innerText = Math.round(data.density * 100000) / 100000;
+
+            const triangles = document.getElementById("aave_triangle_num");
+            triangles.innerText = data.triangles;
+
+            const trans = document.getElementById("aave_trans");
+            trans.innerText = data.transitivity;
         });
     })
 

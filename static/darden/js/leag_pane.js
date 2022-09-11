@@ -25,6 +25,12 @@ function setData() {
 
             const density = document.getElementById("leag_density_num");
             density.innerText = Math.round(data.density * 100000) / 100000;
+
+            const triangles = document.getElementById("leag_triangle_num");
+            triangles.innerText = data.triangles;
+
+            const trans = document.getElementById("leag_trans");
+            trans.innerText = data.transitivity;
         });
     })
 
