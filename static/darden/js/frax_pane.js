@@ -27,10 +27,10 @@ function setData() {
             density.innerText = Math.round(data.density * 100000) / 100000;
 
             const triangles = document.getElementById("frax_triangle_num");
-            triangles.innerText = Math.round(data.triangles * 100000) / 10000;
+            triangles.innerText = data.triangles;
 
             const trans = document.getElementById("frax_trans");
-            trans.innerText = data.transitivity;
+            trans.innerText = Math.round(data.transitivity * 100000) / 100000;
         });
     })
 
