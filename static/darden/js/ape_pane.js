@@ -26,7 +26,7 @@ function setData() {
             density.innerText = Math.round(data.density * 100000) / 100000;
 
             const triangles = document.getElementById("ape_triangle_num");
-            triangles.innerText = data.triangles;
+            triangles.innerText = Math.round(data.triangles * 100000) / 10000;
 
             const trans = document.getElementById("ape_trans");
             trans.innerText = data.transitivity;
