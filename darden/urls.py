@@ -20,7 +20,7 @@ from django.urls import include, path
 
 urlpatterns = [
     # Admin Site
-    path('admin/', admin.site.urls),
+    path('q3ucm9q4uvt9qvmqu90rmuij;qmqq;mrq3[9rmqm/', admin.site.urls),
 
     # Landing Page
     # path('', TemplateView.as_view(template_name="index.html"), name='home'),
