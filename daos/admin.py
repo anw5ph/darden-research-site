@@ -1,27 +1,22 @@
 from django.contrib import admin
-from .models import Transaction, TransactionSheet, DAO
+from .models import Transaction, DAO
 
 # Register your models here.
 
 
 class DAOAdmin(admin.ModelAdmin):
-    list_display = ('name', 'trans_sheet')
-    search_fields = ['name']
+    list_display = ('contract_address', 'name', 'token_symbol')
+    search_fields = ['name', 'contract_address', 'token_symbol']
     ordering = ['id']
 
 
-class TransactionSheetAdmin(admin.ModelAdmin):
-    list_display = ('date', 'trans')
-    search_fields = ['date']
-    ordering = ['date']
-
-
 class TransactionAdmin(admin.ModelAdmin):
-    list_display = ('date_time', 'from_address', 'to_address', 'amount')
-    search_fields = ['from_address', 'to_address']
+    list_display = ('date_time', 'from_address', 'to_address',
+                    'amount', 'contract_address')
+    search_fields = ['from_address', 'to_address',
+                     'contract_address', 'date_time']
     ordering = ['date']
 
 
 admin.site.register(Transaction)
-admin.site.register(TransactionSheet)
 admin.site.register(DAO)
