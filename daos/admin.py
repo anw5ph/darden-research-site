@@ -5,11 +5,11 @@ from .models import Transaction, DAO
 
 
 class TransactionAdmin(admin.ModelAdmin):
-    list_display = ('date_time', 'from_address', 'to_address',
+    list_display = ('date_time', 'address_from', 'address_to',
                     'amount', 'contract_address')
-    search_fields = ['from_address', 'to_address',
+    search_fields = ['address_from', 'address_to',
                      'contract_address', 'date_time']
-    ordering = ['date']
+    ordering = ['id']
 
 
 class DAOAdmin(admin.ModelAdmin):
