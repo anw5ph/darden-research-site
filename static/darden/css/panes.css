@@ -15,11 +15,11 @@ body {
     border-bottom: 3px solid #E57200;
 }
 
-#footer-container {
+/* #footer-container {
     position: fixed;
     bottom: 0;
     justify-content: center;
-}
+} */
 
 a {
     text-decoration: none;
@@ -29,4 +29,9 @@ a {
 .card {
     border-color: #E57200;
     border-width: 3px;
+}
+
+.bi-calendar-week:hover,
+.bi-calendar-week:focus {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }

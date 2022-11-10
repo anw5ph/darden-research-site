@@ -8,3 +8,7 @@ def index(request):
 
 def paneView(request):
     return render(request, 'daos/panes.html')
+
+
+def weekView(request):
+    return render(request, 'daos/week.html')

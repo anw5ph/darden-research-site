@@ -1,0 +1,28 @@
+body {
+    background-color: #232D4B;
+}
+
+.nav-link {
+    font-size: 20px;
+    padding-right: 4rem;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.navbar {
+    border-bottom: 3px solid #E57200
+}
+
+/* #footer-container {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+} */
+
+.carousel-inner > .item >img{
+    min-height : 300px;
+    max-height : 300px;
+    width : 100%;
+  }

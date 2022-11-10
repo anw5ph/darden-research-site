@@ -24,7 +24,7 @@
                 <div class="navbar-nav">
                   <a class="nav-link" href="{% url 'daos:home' %}">Home</a>
                   <a class="nav-link active" aria-current="page" href="{% url 'daos:pane-view' %}">DAO Pane Analysis</a>
-                  <a class="nav-link" href="#"></a>
+                  <a class="nav-link" href="{% url 'daos:week-view' %}">7 Day Transaction History</a>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" align="center">Ethereum</h5>
+                            <h5 class="card-title" align="center">Ethereum </h5>
                             <hr>
                             <div id="eth_network"></div>
                             <hr>
@@ -131,7 +131,41 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <a href="https://dune.com/lcai/aave-dao"><h5 class="card-title" align="center">Aave</h5></a>
+                            <div class="row">
+                                <div class="col-7">
+                                    <a href="https://dune.com/lcai/aave-dao">
+                                        <h5 class="card-title" align="right">Aave</h5>
+                                    </a>
+                                </div>
+                                <div class="col-5">
+                                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        <h5 class="card-title" align="right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                        </svg>
+                                        </h5>
+                                    </a>
+                                    <!-- Modal -->
+                                    <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Aave 7 Day Transaction Data</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                               
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div> -->
+                                    
+                                </div>
+                            </div>
                             <hr>
                             <div id="aave_network"></div>
                             <hr>
@@ -940,7 +974,7 @@
         </div>
         <br><br>
 
-        <!-- <div class="container-fluid" id="footer-container">
+        <div class="container-fluid" id="footer-container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
               <div class="col-4-md d-flex align-items-center" style="padding-left: 6em;">
                 <span class="mb-3 mb-md-8 text-muted">© 2022 Alexander Williams</span>
@@ -963,7 +997,7 @@
                 </li>
               </ul>
             </footer>
-        </div> -->
+        </div>
 
 
         <script language="javascript">
